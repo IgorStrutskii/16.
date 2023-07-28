@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Зведення числа у ступінь</title>
+  </head>
+  <body>
+    <script>
+      function createSum() {
+        let total = 0;
+
+        return function (num) {
+          total += num;
+          return total;
+        };
+      }
+
+      const sum = createSum();
+
+      console.log(sum(3)); // Виведе 3
+      console.log(sum(5)); // Виведе 8 (3 + 5 = 8)
+      console.log(sum(20)); // Виведе 28 (8 + 20 = 28)
+    </script>
+  </body>
+</html>
